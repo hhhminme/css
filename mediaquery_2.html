@@ -1,0 +1,92 @@
+<!doctype>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content nav {
+            border-right: 1px solid gray;
+        }
+
+        .content aside {
+            border-left: 1px solid gray;
+        }
+
+        @media(max-width:500px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content nav,
+            .content aside {
+                border: none;
+                flex-basis: auto;
+            }
+
+            main {
+                order: 0;
+            }
+
+            nav {
+                order: 1;
+            }
+
+            aside {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt
+                accusantium ipsum provident iste itaque? Perferendis culpa nostrum
+                ue doloribus perferendis, eligendi ex aliquid debitis laudantium omnis accusamus
+                m or, quae consequuntur ullam necessitatibus magni rem optio officiis totam
+                in dicta quas, odio quam blanditiis dolores pariatur? Dolorem, fuga? Harum ratione nemo perspiciatis
+
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+
+</html>
